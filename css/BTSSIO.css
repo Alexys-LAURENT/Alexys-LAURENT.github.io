@@ -1,0 +1,316 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Limelight','Amiri', serif;
+        background-color: black;
+        background-size: cover;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-attachment: fixed;
+        overflow-x:hidden;
+        opacity: 1;
+        transition-duration: 0.7s;
+        transition-property: opacity;
+        overflow-y: auto;
+        
+    
+}
+
+body.fade {
+    opacity: 0;
+  }
+
+nav.sticky{
+    background-color: black;
+    transition: 400ms;
+  }
+
+img, media {
+    max-width: 100%;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    font-size: 25px;
+    transition: 400ms;
+}
+
+
+
+
+label{
+    color: rgb(243, 243, 243);
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+#bo a{
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.logo{
+    padding-left: 30px;
+    font-family: 'Amiri', serif;
+}
+#bo a:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+}
+#bo.a,.active,#bo a:hover{
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    
+}
+#bo a.active{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+nav #icon{
+    color: rgb(255, 255, 255) ;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1240px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(26, 29, 26);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: rgb(255, 255, 255);
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+
+#link{
+    position: relative;
+    left: 98%;
+    top: 4px;
+}
+/*
+.diagonal-box {
+	background-color: rgba(248, 255, 66,0.7);
+    transform: skewY(20deg);
+    position: relative;
+    right: -200px;
+} 
+.content { 	
+    color: white;
+    margin: 0 auto;
+    max-width: 50em;
+    position: relative;
+    top: -55px;
+    right: -1050px;
+    font-size: 80px;
+    transform: skewY(-20deg);
+}
+*/
+.diagonal-box {
+	background-color: rgba(248, 255, 66,0.7);
+    transform: skewY(20deg);
+    position: relative;
+    right: -13%;
+    top: 2%;
+    min-width: 100%;
+    min-height: 20%;
+} 
+.content { 	
+    color: white;
+    margin:0;
+    max-width: 50em;
+    position: relative;
+    top: -55px;
+    right: -55%;
+    font-size: 80px;
+    transform: skewY(-20deg);
+}
+
+.content p{
+    transform: rotate(20deg);
+    font-family: 'Playfair Display SC', serif;
+}
+
+
+.texte{
+    margin-left: 80px;
+    color: white;
+    margin-top: 30px;
+}
+
+.texte p{
+    font-size: 20px;
+}
+
+.texte h1{
+    font-size: 50px;
+}
+
+.tableau1{
+    display: flex;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255,0.05);
+    max-width: 800px;
+    border-radius: 7% 0%;
+    margin-top:50px ;
+}
+
+.tabg,.tabd{
+    color: white;
+}
+
+.tabg{
+    float: left;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.tabd{
+    float: right;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+.tabg h3,.tabd h3{
+    font-size:15px;
+    color: rgba(255, 255, 255,0.4);
+}
+
+.tabg p,.tabd p{
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 15pxk;
+}
+
+.tabg h2,.tabd h2{
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.ligne1{
+    margin-top: 30px;
+}
+
+.tableau2{
+    display: flex;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 800px;
+    border-radius: 7% 0%;
+    margin-top:20px ;
+}
+
+.tab2g,.tab2d{
+    color: white;
+}
+
+.tab2g{
+    float: left;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.tab2d{
+    float: left;
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+
+.tab2g p,.tab2d p{
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 15pxk;
+}
+
+.tab2g h2,.tab2d h2{
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.ligne2{
+    margin-top: 55px;
+}
+
+h4{
+    color: white;
+    margin-left: 80px;
+    margin-top: 50px;
+}
