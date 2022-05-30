@@ -23,14 +23,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/button.js"></script>
 </head>
 <body>
 
+    <script>$('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+      })
+    </script>
     <script>
         document.body.className = 'fade';
       </script>
+
 
     <div class="diagonal-box">  </br> </br></br> </br>
         <div class="content"> <p>E4 </p> </div>
@@ -40,7 +47,7 @@
     <nav>
         
         <label class="logo">
-            <p>Alexys LAURENT</p>
+          <p>Alexys LAURENTㅤ <a href="https://www.linkedin.com/in/alexys-laurent-363210231/" target="_blank"><img src="images/linkedin.png" alt="" height="15" width="15"></a></p>
         </label>
     <ul id="bo">
         <li><a href="portfolio.html">Accueil</a></li>
@@ -62,7 +69,7 @@
         
         <div class="texte_intro">
 
-            <p>Vous retrouvez ici les différents<span style="color: rgb(255, 143, 196)"> <a href="#projets">projets</a> </span>  que j'ai pu réaliser </br>ainsi que le <span style="color: rgb(255, 143, 196)"> <a href="#tab">tableau de synthèse</a></span> de l'épreuce E4. </p>
+            <p>Vous retrouvez ici les différents<span style="color: rgb(255, 143, 196)"> <a href="#projets">projets & situations professionnels</a> </span>  que </br>j'ai pu réaliser ainsi que le <span style="color: rgb(255, 143, 196)"> <a href="#tab">tableau de synthèse</a></span> de l'épreuce E4. </p>
         </div>
    
     </br> </br></br> </br></br> </br></br> </br>
@@ -94,10 +101,10 @@
                   véhicules,	les	mécaniciens,	les	clients	ainsi	que	les	interventions) et	
                    de	les	associer	entre	eux.	Pour	ce	faire	nous	avions	utilisé	HTML5	et	
                   CSS3	pour	le	site,	MySQL	pour	la	base	de	données	et	PHP	afin	de	lier	
-                  la	base	au	site	et	de	pouvoir	la	modifier	en	temps	réel.</p>
+                  la	base	au	site	et	de	pouvoir	la	modifier	en	temps	réel.</p> 
              </div>
              <div class="modal1_vid">
-                  <video controls width="550" height="320">
+                  <video controls width="60%" height="40%">
 
                      <source src="videos/Tp_Garage.mp4"
                              type="video/webm">
@@ -119,7 +126,7 @@
             <a class="popup__overlay" href="#projets"></a>
             <div class="popup__wrapper">
               <a class="popup__close" href="#projets">✖</a>
-             <p>POPUP 2 : CONTENT HERE</p>
+              <iframe src="docs/Procédure AD.pdf"width="90%" height="500px"></iframe>
          </div>
         </div>
         </div>
@@ -127,13 +134,13 @@
 
         <!-- //////////////MODUL 3////////////////// -->
         <div class="mod3">
-        <a class="button" href="#modal2">OCS/GLPI</a>
+        <a class="button" href="#modal3">OCS</a>
 
-        <div class="popup" id="modal2">
+        <div class="popup" id="modal3">
             <a class="popup__overlay" href="#projets"></a>
             <div class="popup__wrapper">
               <a class="popup__close" href="#projets">✖</a>
-             <p>POPUP 2 : CONTENT HERE</p>
+              <iframe src="docs/Procedure_OCS.pdf"width="90%" height="500px"></iframe>
          </div>
         </div>
         </div>
@@ -141,13 +148,13 @@
 
         <!-- //////////////MODUL 4////////////////// -->
         <div class="mod4">
-        <a class="button" href="#modal2">Apache</a>
+        <a class="button" href="#modal4">GLPI</a>
 
-        <div class="popup" id="modal2">
+        <div class="popup" id="modal4">
             <a class="popup__overlay" href="#projets"></a>
             <div class="popup__wrapper">
               <a class="popup__close" href="#projets">✖</a>
-             <p>POPUP 2 : CONTENT HERE</p>
+              <iframe src="docs/glpi-project.pdf"width="90%" height="500px"></iframe>
          </div>
         </div>
         </div>
@@ -155,13 +162,13 @@
 
         <!-- //////////////MODUL 5////////////////// -->
         <div class="mod5">
-        <a class="button" href="#modal2">Gestion de disques</a>
+        <a class="button" href="#modal5">Gestion de disques</a>
 
-        <div class="popup" id="modal2">
+        <div class="popup" id="modal5">
             <a class="popup__overlay" href="#projets"></a>
             <div class="popup__wrapper">
               <a class="popup__close" href="#projets">✖</a>
-             <p>POPUP 2 : CONTENT HERE</p>
+              <iframe src="docs/disques.pdf"width="90%" height="500px"></iframe>
          </div>
         </div>
         </div>
@@ -169,17 +176,65 @@
 
         <!-- //////////////MODUL 6////////////////// -->
         <div class="mod6">
-        <a class="button" href="#modal2">Exchange</a>
+        <a class="button" href="#modal6">Exchange</a>
 
-        <div class="popup" id="modal2">
+        <div class="popup" id="modal6">
             <a class="popup__overlay" href="#projets"></a>
             <div class="popup__wrapper">
               <a class="popup__close" href="#projets">✖</a>
-             <p>POPUP 2 : CONTENT HERE</p>
+              <iframe src="docs/Exchange.pdf"width="90%" height="500px"></iframe>
          </div>
         </div>
         </div>
         <!-- ///////////FIN MODUL 6///////////////////// -->
+
+
+        <!-- //////////////MODUL 7////////////////// -->
+        <div class="mod7">
+          <a class="button" href="#modal7">Apache</a>
+  
+          <div class="popup" id="modal7">
+              <a class="popup__overlay" href="#projets"></a>
+              <div class="popup__wrapper">
+                <a class="popup__close" href="#projets">✖</a>
+                <iframe src="docs/apache2.pdf"width="90%" height="500px"></iframe>
+           </div>
+          </div>
+          </div>
+          <!-- ///////////FIN MODUL 7///////////////////// -->
+
+           <!-- //////////////MODUL 8////////////////// -->
+        <div class="mod8">
+          <a class="button" href="#modal8">SSH</a>
+  
+          <div class="popup" id="modal8">
+              <a class="popup__overlay" href="#projets"></a>
+              <div class="popup__wrapper">
+                <a class="popup__close" href="#projets">✖</a>
+                <iframe src="docs/SSH.pdf"width="90%" height="500px"></iframe>
+           </div>
+          </div>
+          </div>
+          <!-- ///////////FIN MODUL 8///////////////////// -->
+
+
+           <!-- //////////////MODUL 9////////////////// -->
+        <div class="mod9">
+          <a class="button" href="#modal9">Pf sense</a>
+  
+          <div class="popup" id="modal9">
+              <a class="popup__overlay" href="#projets"></a>
+              <div class="popup__wrapper">
+                <a class="popup__close" href="#projets">✖</a>
+                <iframe src="docs/Pfsense.pdf"width="90%" height="500px"></iframe>
+           </div>
+          </div>
+          </div>
+          <!-- ///////////FIN MODUL 9///////////////////// -->
+
+
+
+
     </div>
     </center>
     
@@ -199,5 +254,10 @@
       }, 50);
     });
   </script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

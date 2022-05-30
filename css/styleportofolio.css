@@ -47,6 +47,9 @@ label{
     line-height: 80px;
 }
 
+label a{
+    position: absolute;
+}
 
 
 nav ul{
@@ -178,13 +181,13 @@ nav #icon{
 .texte_intro{
     margin-left: 80px;
     color: rgb(255, 255, 255);
-    margin-top: 130px;
+    margin-top: 40px;
 }
 
 .texte_intro p{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .texte_intro h1{
-    font-size: 50px;
+    font-size: 44px;
 }
